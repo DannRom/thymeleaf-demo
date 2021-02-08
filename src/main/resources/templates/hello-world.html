@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Thymeleaf Demo</title>
+  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+  <script th:src="@{/js/bootstrap.min.js}"></script>
+
+  <link rel="stylesheet" th:href="@{/css/demo.css}"/>
+
+</head>
+<body>
+<p th:class="my-style" th:text="'Time on the server is ' + ${currentDate}"></p>
+</body>
+</html>
